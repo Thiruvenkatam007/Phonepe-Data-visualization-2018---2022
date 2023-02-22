@@ -2,7 +2,7 @@
 Hi friends this is the app i created to analyse Phonepe pulse data which i get through Phonepe pulse github repo.Then I deployed this app in streamlit.Enjoy the code 😉
 ![alt_text](https://media.licdn.com/dms/image/C5612AQGdCw8CZhcuEQ/article-cover_image-shrink_600_2000/0/1607024381761?e=2147483647&v=beta&t=tKCyrHlbMu3A5SX-dJAR799b6Kxu1x81QbTM904m1QQ)
 **Please install requirements.txt.**
->[My app link](https://thiruvenkatam007-phonepe-data-visualization-2018-maincsv-n0orbj.streamlit.app/)
+>[My app link](https://thiruvenkatam007-phonepe-data-visualization-2018---main2-iax51p.streamlit.app/)
 
 ### First lets extracts datas from the github and convert it into csv files
 *This is the dataset i used in my streamlit web application to visualize datas*
