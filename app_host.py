@@ -25,7 +25,7 @@ def run_query(query):
         return cur.fetchall()
 
 
-rows = run_query("SELECT * from mytable;")
+rows = run_query("SELECT * from district_map_registering_table;")
 
 # Print results.
 for row in rows:
