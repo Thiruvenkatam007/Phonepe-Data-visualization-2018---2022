@@ -5,3 +5,4 @@ PyMySQL==1.0.2
 notebook==6.4.12
 SQLAlchemy==1.4.39
 streamlit==1.18.1
+mysql-connector-python==8.0.32
