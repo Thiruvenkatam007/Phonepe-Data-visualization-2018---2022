@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import sqlalchemy
-import plotly.io as pio
-pio.renderers.default = "chrome"
+# import plotly.io as pio
+# pio.renderers.default = "chrome"
 
 # -------------------------------------------------- Mysql server connection using sqlalchemy ---------------------------------------------
 # --------------------------------------------------- Must install pymysql -----------------------------------------------------------------
