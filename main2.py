@@ -160,8 +160,14 @@ with geo_analysis:
     fig.update_layout(height=1000, width=1000)
     st.write(' ')
     st.write(' ')
+    import webbrowser    
+    #urL='https://www.google.com'
+    chrome_path="C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    webbrowser.register('chrome', None,webbrowser.BackgroundBrowser(chrome_path),1)
+    
     if st.button('Click here to see map clearly'):
-        fig.show()
+        webbrowser.get('chrome').open_new_tab(fig.show())
+        
     st.plotly_chart(fig)
 
 
