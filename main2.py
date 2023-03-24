@@ -163,7 +163,7 @@ with geo_analysis:
     import webbrowser    
     #urL='https://www.google.com'
     chrome_path="C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-    webbrowser.register('chrome', None,webbrowser.BackgroundBrowser(chrome_path),1)
+    webbrowser.register('chrome', webbrowser.BackgroundBrowser(chrome_path),1)
     
     if st.button('Click here to see map clearly'):
         webbrowser.get('chrome').open_new_tab(fig.show())
