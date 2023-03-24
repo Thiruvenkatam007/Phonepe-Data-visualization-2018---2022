@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import sqlalchemy
+import plotly.io as pio
+pio.renderers.default = "browser"
 
 # -------------------------------------------------- Mysql server connection using sqlalchemy ---------------------------------------------
 # --------------------------------------------------- Must install pymysql -----------------------------------------------------------------
@@ -160,13 +162,9 @@ with geo_analysis:
     fig.update_layout(height=1000, width=1000)
     st.write(' ')
     st.write(' ')
-    import webbrowser    
-    #urL='https://www.google.com'
-    chrome_path="C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-    webbrowser.register('chrome', webbrowser.BackgroundBrowser(chrome_path),1)
     
     if st.button('Click here to see map clearly'):
-        webbrowser.get('chrome').open_new_tab(fig.show())
+        fig.show()
         
     st.plotly_chart(fig)
 
