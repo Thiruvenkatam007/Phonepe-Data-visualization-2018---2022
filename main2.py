@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import sqlalchemy
 import plotly.io as pio
-pio.renderers.default = "browser"
+pio.renderers.default = "chrome"
 
 # -------------------------------------------------- Mysql server connection using sqlalchemy ---------------------------------------------
 # --------------------------------------------------- Must install pymysql -----------------------------------------------------------------
@@ -164,7 +164,7 @@ with geo_analysis:
     st.write(' ')
     
     if st.button('Click here to see map clearly'):
-        fig.show()
+        fig.show(renderer="chrome")
         
     st.plotly_chart(fig)
 
