@@ -161,7 +161,7 @@ with geo_analysis:
     st.write(' ')
     st.write(' ')
     if st.button('Click here to see map clearly'):
-        fig.show(renderer="browser")
+        fig.show()
     st.plotly_chart(fig)
 
 
